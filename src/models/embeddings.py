@@ -11,16 +11,11 @@ class LegalEmbedder:
         self.model = self._load_model()
         
     def _load_model(self):
-        """Loads appropriate embedding model with fallback"""
-        try:
-            # Prefer a legal-specific model for better domain performance
-            logging.info("Attempting to load 'nlpaueb/legal-bert-base-uncased' model...")
-            model = SentenceTransformer('nlpaueb/legal-bert-base-uncased')
-            logging.info("Successfully loaded Legal-BERT model.")
-            return model
-        except Exception as e:
-            logging.warning(f"Legal-BERT model not found or failed to load: {e}. Falling back to a general-purpose model.")
-            return SentenceTransformer('all-MiniLM-L6-v2')
+        """Loads a fast, general-purpose model suitable for web deployment."""
+        # This model is small, fast, and works well for this environment.
+        model_name = 'all-MiniLM-L6-v2'
+        logging.info(f"Loading '{model_name}' model for deployment.")
+        return SentenceTransformer(model_name)
     
     def embed(
         self, 
