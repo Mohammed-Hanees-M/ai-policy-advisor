@@ -1,0 +1,16 @@
+[theme]
+primaryColor = "#4CAF50"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#31333F"
+font = "sans serif"
+
+[server]
+# This setting tells Streamlit it's on a server and shouldn't open a browser.
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+[runner]
+magicEnabled = false

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.env
+.venv/
+
+# Data
+*.pdf
+*.docx
+*.jpg
+*.png
+data/
+.cache/
+.chat_memory/
+
+# Streamlit
+.streamlit/secrets.toml
+static/audio/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
