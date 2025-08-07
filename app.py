@@ -1,14 +1,14 @@
 import streamlit as st
-# --- IMPORTS UPDATED FOR STREAMLIT DEPLOYMENT ---
-from .config.config import GeminiConfig, AppConfig
-from .models.llm import GeminiClient
-from .utils.file_processor import FileProcessor
-from .utils.retrieval import VectorRetriever, DocumentProcessor
-from .utils.websearch import WebSearcher
-from .utils.tts import autoplay_audio
-from .config.modes import CHAT_MODES
-from .config.personas import PERSONAS
-from .config.response_modes import RESPONSE_MODES, DEFAULT_RESPONSE_MODE
+# --- IMPORTS UPDATED FOR STANDARD PROJECT STRUCTURE ---
+from src.config.config import GeminiConfig, AppConfig
+from src.models.llm import GeminiClient
+from src.utils.file_processor import FileProcessor
+from src.utils.retrieval import VectorRetriever, DocumentProcessor
+from src.utils.websearch import WebSearcher
+from src.utils.tts import autoplay_audio
+from src.config.modes import CHAT_MODES
+from src.config.personas import PERSONAS
+from src.config.response_modes import RESPONSE_MODES, DEFAULT_RESPONSE_MODE
 # --- Standard Library Imports ---
 from datetime import datetime
 import logging

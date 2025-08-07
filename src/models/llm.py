@@ -1,5 +1,5 @@
-# --- IMPORT UPDATED FOR STREAMLIT DEPLOYMENT ---
-from ..config.config import GeminiConfig
+# --- IMPORT UPDATED FOR STANDARD PROJECT STRUCTURE ---
+from src.config.config import GeminiConfig
 import google.generativeai as genai
 from typing import Optional, Dict, Any, List
 import logging
